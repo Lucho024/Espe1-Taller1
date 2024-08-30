@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideal Fashion</title>
-    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
     
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            fetch('components/header.html')
+            fetch('./components/header.html')
                 .then(response => response.text())
                 .then(data => document.getElementById('header').innerHTML = data);
         })
