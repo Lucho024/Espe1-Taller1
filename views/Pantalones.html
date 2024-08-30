@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <title>Ideal Fashion</title>
+
+
+</head>
+<body>
+    <header id="header">
+
+    </header>
+
+
+    <article>
+        <section>
+            <h1 class="pantalon">PANTALONES</h1>
+            <div class="producto">
+                <img class="imagen" src="https://i.pinimg.com/564x/99/0b/46/990b461b30b414f00625d7658e5c3935.jpg" alt="">
+                <img class="imagen" src="https://i.pinimg.com/564x/02/37/8a/02378a567c960e99af63921fb9909c16.jpg" alt="">
+                <img class="imagen" src="https://i.pinimg.com/564x/44/59/cd/4459cdfcd7f67f2367aa3c6b3f98e8a4.jpg" alt="">
+                <img class="imagen" src="https://i.pinimg.com/736x/67/68/55/676855c99df2aa77b91576ba88976ec3.jpg" alt="">
+                <img class="imagen" src="https://i.pinimg.com/564x/38/c3/65/38c36592365cdc68a5ec4a9c1053dbc9.jpg" alt="">
+                <img class="imagen" src="https://i.pinimg.com/564x/3f/32/da/3f32da9f59945a2e8977f7f0abbd7fb3.jpg" alt="">
+            
+            </div>
+        </section>
+
+    </article>
+
+    <footer id="footer">
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        })
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('../components/footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('footer').innerHTML = data);
+        })
+    </script>
+    
+</body>
+</html>

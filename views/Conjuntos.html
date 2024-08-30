@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <title>Ideal Fashion</title>
+
+
+</head>
+<body>
+    <header id="header">
+
+    </header>
+    
+    <article>
+        <section>
+            <h1 class="conjunto">CONJUNTO</h1>
+            <div class="producto">
+                <img class="imagen" src="https://i.pinimg.com/564x/8d/c2/e7/8dc2e787ed264513ed73c3201e3a311a.jpg" alt="imagen1">
+                <img class="imagen" src="https://i.pinimg.com/564x/f0/22/c7/f022c72a13f3071708cb22ea89997b26.jpg" alt="imagen2">
+                <img class="imagen" src="https://i.pinimg.com/564x/81/18/d7/8118d7b9c1a5887c4cf28c823aba9c1c.jpg" alt="imagen3">
+                <img class="imagen" src="https://i.pinimg.com/564x/0d/0b/2f/0d0b2fedb750445f42e4b52335d19ca3.jpg" alt="imagen4">
+                <img class="imagen" src="https://i.pinimg.com/564x/28/04/50/2804505a4ea7cdbf410fd4182aa633c0.jpg" alt="imagen5">
+                
+            </div>
+        </section>
+    </article>
+
+    <footer id="footer">
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        })
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('../components/footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('footer').innerHTML = data);
+        })
+    </script>
+    
+</body>
+</html>

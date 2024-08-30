@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <title>Ideal Fashion</title>
+
+
+</head>
+<body>
+    
+<header id="header">
+
+</header>
+
+
+<article>
+    <section>
+        <h1 class="poleron">POLERONES</h1>
+        <div class="producto">
+            <img class="imagen" src="https://i.pinimg.com/736x/b4/f2/08/b4f2086d6d5f46807095318508081cb7.jpg" alt="imagen1">
+            <img class="imagen" src="https://i.pinimg.com/736x/29/26/0a/29260a8a85178ae9ad6166bd4e7e9fa8.jpg" alt="imagen2">
+            <img class="imagen" src="https://i.pinimg.com/736x/1b/4a/5f/1b4a5f60050945c16ec7978f53807cd0.jpg" alt="imagen3">
+            <img class="imagen" src="https://i.pinimg.com/736x/40/6c/df/406cdf00c908699369c70f9b74411765.jpg" alt="imagen4">
+            <img class="imagen" src="https://i.pinimg.com/736x/15/ec/c8/15ecc88e180947e5e9b001c5779370f4.jpg" alt="imagen5">
+            <img class="imagen" src="https://i.pinimg.com/564x/9f/72/62/9f7262021ffb977ad889f6f1deb036f1.jpg" alt="imagen6">
+        </div>
+
+    </section>
+
+</article>
+
+<footer id="footer">
+</footer>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        fetch('../components/header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+    })
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    })
+</script>
+    
+</body>
+</html>
+
+
+
