@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Fashion</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+
+    <header id="header">
+
+    </header>
+
+    <article>
+        <section class="imagenes-inicio">
+            <img class="imagen" src="https://i.pinimg.com/564x/f4/58/a0/f458a0753cb8c33d39a08547141916e4.jpg" alt="imagen1">
+            <img class="imagen" src="https://highxtar.com/wp-content/uploads/2022/08/highxtar-pangaia-lanza-una-capsula-ecologica-re-color-1.jpg" alt="imagen2">
+            <img class ="imagen" src="https://i.pinimg.com/564x/46/23/c1/4623c1dfe038f1fc552f2b3cc32a10f1.jpg" alt="imagen3">
+        </section>
+        
+        <section>
+            <h1 class="vendidos">MAS VENDIDOS</h1>
+            <div class="contenedor">
+                <img class="imagen" src="https://i.pinimg.com/564x/37/2c/f6/372cf69977b9bffa5b337fd635a1c59a.jpg" alt="imagen1">
+                <img class="imagen" src="https://i.pinimg.com/564x/e7/a2/5f/e7a25f307f5fe25680a91665645fe6da.jpg" alt="imagen2">
+                <img class="imagen" src="https://i.pinimg.com/564x/79/dc/5f/79dc5fb9bf1da70016243bfa8342c1ae.jpg" alt="imagen3">
+            </div>
+        </section>
+    </article>
+
+
+    <footer id="footer">
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('components/header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header').innerHTML = data);
+        })
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('../components/footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('footer').innerHTML = data);
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>
