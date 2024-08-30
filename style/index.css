@@ -1,29 +1,234 @@
-.encabezado{
-    background-color: white;
-}
-/*cambiar fuente a Archivo Black */
+/* CSS Header*/
 
-.encabezado h1{
-    font-family:'Archivo Black', sans-serif;;
-    font-size: 47px;
+.encabezado{ 
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+   
+
+    
 }
+
+.encabezado *, .vendidos, h1,.navbar-rutas,.ideal-fashion, .boton, .form-titulo, .submit {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.boton{
+    display: flex;
+    align-items: center;
+    margin-right: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.boton:hover{
+    border: 3px solid black;
+    border-radius: 2px;
+}
+.ideal-fashion, .navbar-rutas,.enlace{
+    text-decoration: none;
+    color: black;
+}
+.navbar-rutas{
+   
+    margin: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 5%;
+    margin-right: 4%;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.encabezado .ideal-fashion, .vendidos, .vendidos,.pantalon, .poleron,.conjunto, footer a{
+    
+    font-size: 47px;
+    font-weight: 900;
+    margin-left: 2%;
+}
+
+
+
 .encabezado input{
     /* */
-    width: 300px;
-    padding: 10px;
+    width: 400px;
+    margin-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    background-color: #D9D9D9;
+    color: black;
+    border-style: none;
+    border-radius: 10px;
+
 }
 .encabezado button{
     /* */
-    padding: 10px 20px;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-right: 5%;
     font-size: 18px;
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.encabezado button:hover{
+    background-color: #000000;
+    color: white;
+}
+
+
+/*
+    CSS PAGINA PRINCIPAL   
+*/
+
+
+.imagenes-inicio{
+    display: flex;
+    background-color: #EBEBEB;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+.imagen{
+    width: 31%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #EBEBEB;
+
+}
+.contenedor .imagen{
+    width: 30%;
+    height: 500px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+
+/*
+    CSS VISTA PRODUCTO
+*/
+
+.producto{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    width: 100%;
+    row-gap: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #EBEBEB;
+
+}
+.producto .imagen {
+   width: 300px;
+   height: 400px;
+}
+
+
+
+/*
+    CSS DEL FOOTER
+*/
+.footer{
+    display: flex;;
+    background-color: black;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color : white;
+}
+.footer-data {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: start;
+    column-gap: 100px;
+    padding: 1%;
+    margin: 5%;
+}
+.footer-data h1{
+    font-weight: 300;
+    font-size: 25px;
+}
+.footer-data .lista{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;    
+}
+.footer-data .lista li{
+    margin: 0%;
+    padding: 0%;
+    margin-top: 5%;
+}
+/*
+    CSS LOGIN
+*/
+
+.login-container, .registro-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: auto;
+
+}
+.input-login, .input-crear-cuenta {
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 103%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 10px;
+    font-size: 16px;
 }
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-container h1, .registro-container h1 {
+    font-weight: 800;
+}
+
+
+
